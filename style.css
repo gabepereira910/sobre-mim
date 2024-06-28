@@ -1,0 +1,244 @@
+/*ver site color hunt*/
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: aqua;
+    --cor-quaternaria: red;
+    --cor-hover: rgba(82, 80, 80, 0.776);
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.apresentacao_principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 17%;
+    margin-right: 50%;
+    margin-top: 5%;
+    gap: 82px;
+    
+}
+
+/*#*/
+.apresentacao_conteudo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 38px;
+}
+/*#*/   
+
+.apresentacao_titulo {
+    color: var(--cor-terciaria);
+    font-size: 2.25rem;
+}
+
+.minha_descricao {
+    color: var(--cor-secundaria);
+    font-size: 1.125rem;
+    text-align: justify;
+}
+
+.descricao_destaque {
+    color: var(--cor-terciaria);
+    
+}
+
+.front_end_destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao_imagem {
+    width: 12,5rem;
+    height: 12.5rem;
+    border-radius: 5.625rem;
+    margin: -85% 0 0 230%; 
+}
+
+
+.apresentacao_links {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+
+.minhas_redes {
+    font-size: 1.125rem;
+    color: var(--cor-terciaria);
+    margin-top: 5%;
+    
+}
+
+.apresentacao_link_conteudo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    width: 15.625rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    border: 2px solid var(--cor-terciaria);
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 5%;
+
+}
+
+.apresentacao_link_conteudo:hover {
+    background-color: rgba(82, 80, 80, 0.776);
+}
+
+
+/*trabalhando com tags e elementos do cabeçalho*/
+.cabecalho {
+    padding: 2% 0 0 16%;
+    /*como se fosse um relógio*/
+    /*padding-top: 2%;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 16%;*/
+
+}
+
+.sobre_mim {
+    color: var(--cor-quaternaria);
+    font-size: 0.875rem;
+    text-decoration: none;
+
+}
+
+.icone_linkedin {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left:  0;
+    border: 1px solid var(--cor-terciaria);
+    
+}
+
+.icone_instagram {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left:  0;
+}
+
+
+/*trabalhando com tags e elementos do rodapé*/
+.rodape {
+    display: center;
+    text-align: center;
+    margin-top: 15%;
+    padding: 1.5%;
+}
+
+.rodape_descricao {
+    font-weight: 500;
+    color: var(--cor-quaternaria);
+}
+
+
+/*trabalhando com tags e elementos da segunda página*/
+.cabecalho_segunda_pagina {
+    padding: 2% 0 0 24%;
+}
+
+.voltar {
+    color: var(--cor-quaternaria);
+    text-decoration: none;
+}
+
+/*gap só funciona para o display: flex*/
+/*gap define o espaçamento entre os elementos filho de uma tag pai*/
+.apresentacao_principal_segunda_pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: center;
+    padding: 5% 30% 0 30%;
+    text-align: justify;
+    
+}
+
+.titulo_principal_segunda_pagina {
+    color: var(--cor-terciaria);
+    font-size: 1.125rem;
+}
+
+.texto_segunda_pagina {
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+}
+
+
+
+.rodape_segunda_pagina {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    padding: 2%;
+    margin-top: 7%;
+}
+
+.rodape_descricao_seguda_pagina {
+    color: var(--cor-quaternaria);
+}
+
+/*utilizamos unidade rem na responsividade de sites*/
+/*realizada a conversão de px para rem para todos os elementos que possuem px*/
+/*exemplo: 36px / 16 = 1.125rem*/
+
+/*responsividade*/
+@media screen and (max-width: 923px) {
+    .apresentacao_principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao_conteudo {
+        display:block;
+        align-items: center;
+        margin-left: 110%;
+    }
+
+    .apresentacao_imagem {
+        margin-top: -10%;
+        margin-left: 110%;
+    }
+
+    .rodape {
+        margin-top: 8%;
+        background-color: white;
+        padding: 3%;
+    }
+
+    .rodape_descricao {
+        margin-left: 4%;
+        font-weight: 600;
+    }
+
+    /*trabalhando com rsponsividade na segunda página*/
+    .texto_segunda_pagina {
+        margin-left: -10%;
+        margin-right: -10%;
+        text-align: justify;
+    }
+
+    .rodape_descricao_seguda_pagina {
+        font-weight: 600;
+    }
+}
+
